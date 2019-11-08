@@ -4,6 +4,8 @@
 
 # Task Manager
 
+https://alexp11223-task-manager.herokuapp.com
+
 ## Development setup
 
 1. Run `make setup` to generate `.env` file, create SQLite database, apply migrations.
