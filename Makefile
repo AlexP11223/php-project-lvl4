@@ -6,6 +6,10 @@ setup: install
 	php artisan key:generate
 	php artisan migrate
 
+setup-ci: install
+	cp -n .env.example .env || true
+	php artisan key:generate
+
 db-reset:
 	php artisan migrate:fresh
 
