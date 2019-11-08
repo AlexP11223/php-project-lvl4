@@ -1,0 +1,11 @@
+env:
+  - APP_ENV=testing
+
+language: php
+php:
+  - '7.3'
+
+install:
+  - make install
+
+script: make lint test
