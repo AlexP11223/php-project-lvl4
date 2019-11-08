@@ -1,14 +1,10 @@
 {
-    "name": "laravel/laravel",
-    "type": "project",
-    "description": "The Laravel Framework.",
-    "keywords": [
-        "framework",
-        "laravel"
-    ],
+    "name": "alexp11223/task-manager",
+    "description": "hexlet.io project 4",
+    "keywords": ["hexlet", "hexlet-projects", "task-manager"],
     "license": "MIT",
     "require": {
-        "php": "^7.2",
+        "php": "^7.3",
         "fideloper/proxy": "^4.0",
         "laravel/framework": "^6.2",
         "laravel/tinker": "^1.0",
