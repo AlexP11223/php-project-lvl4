@@ -1,14 +1,10 @@
 install:
 	composer install
 
-setup: install
-	cp -n .env.example .env || true
-	php artisan key:generate
+setup: install env key
 	php artisan migrate
 
-setup-ci: install
-	cp -n .env.example .env || true
-	php artisan key:generate
+setup-ci: install env key
 
 db-reset:
 	php artisan migrate:fresh
@@ -24,6 +20,12 @@ test:
 
 run:
 	php artisan serve
+
+key:
+	php artisan key:generate
+
+env:
+	cp -n .env.example .env || true
 
 ide-helper:
 	php artisan clear-compiled
