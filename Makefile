@@ -24,3 +24,8 @@ test:
 
 run:
 	php artisan serve
+
+ide-helper:
+	php artisan clear-compiled
+	php artisan ide-helper:generate
+	php artisan ide-helper:meta
