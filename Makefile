@@ -27,6 +27,9 @@ key:
 env:
 	cp -n .env.example .env || true
 
+update:
+	composer update
+
 ide-helper:
 	php artisan clear-compiled
 	php artisan ide-helper:generate
